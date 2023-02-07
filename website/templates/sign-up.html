@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} 
+
+{% block content %} 
+<form method="POST">
+    <h1 align="center">Sign Up</h1>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" autocomplete="off"/>
+    </div>
+
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="off"/>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" autocomplete="off"/>
+    </div>
+
+    <div class="form-group">
+        <label for="userName">User Name</label>
+        <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter your user name" autocomplete="off"/>
+    </div>
+
+    <div class="form-group">
+        <label for="password1">Password</label>
+        <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter your password" autocomplete="off"/>
+    </div>
+
+    <div class="form-group">
+        <label for="password2">Password Confirmation</label>
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm your password" autocomplete="off"/>
+    </div>
+    
+    <br/>
+
+    <div class="d-inline-block">
+        <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+        <p class="d-inline-block"> or </p>
+        <a class="btn btn-secondary btn-sm" href="/login" role="button">Login</a>
+    </div>
+
+</form>
+{% endblock %}
