@@ -1,3 +1,5 @@
+# need to put in app context
+
 from website.models import User, Note
 
 users = User.query.all()
