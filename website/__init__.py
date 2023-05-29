@@ -11,6 +11,7 @@ def create_app():
     app.secret_key = 'super secret key'
     app.config['SECRET-KEY'] = 'this is a secret key for encrypt my cookies and session data related to my website.'
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    app.config["TEMPLATES_AUTO_RELOAD"] = True
     db.init_app(app)
     
     from .views import views 
